@@ -1,0 +1,5 @@
+commit 9567c3cd42dffe82d88f7f4cd0a0525829e9cc58
+Author: Josh <jpatch@madisoncollege.edu>
+Date:   Mon Jan 24 11:23:28 2022 -0600
+
+    Initial commit of GitHub exercise
