@@ -19,8 +19,11 @@ while white_rabbit_object == 0:
         white_rabbit_object = 1
         print("hi Dennis. You're still the best hacker in Jurassic Park.")
         print("enter a command")
-        print(command_database.keys())
-        cmd = input("?")
+        for Comkey in command_database.keys():
+            comkeylist = []
+            comkeylist.append(Comkey)
+            print(comkeylist)
+        cmd = input("? ")
         if cmd == "reboot":
             print(command_database.get("reboot"))
         elif cmd == "shutdown":
@@ -28,13 +31,13 @@ while white_rabbit_object == 0:
         elif cmd == "done":
             print(command_database.get("done"))
         else:
-            print("the lysine Contingency has been put into effect")
+            print("the Lysine Contingency has been put into effect")
     else:
         counter = counter+1
         print(f"you didn't say the magic word. {counter}")
         input_user = input("user:")
         input_password = input("password:")
-        if counter >= 2:
+        if counter >= 3:
             ##badvar="you didn't say the magic word."
             for i in range(25):
                 print("you didn't say the magic word.")
